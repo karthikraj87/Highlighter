@@ -1,0 +1,12 @@
+Scope: 
+Given a document and query which are strings, search for the most relevant snippet of length 400 characters with the query terms highlighted (string)
+Searches for the exact match for the query in the doc and returns the snippet if an exact match is found
+Else removes some common words from the query and tries to match as many individual words in the resultant query in the doc.
+
+Extensions:
+	- Assign priorities for words in the search query and append output text according to the rules of priority so that sentences matching higher priority 
+	  words have a higher probability of being part of the snippet returned
+	- Suggest matches for possibly misspelled query strings 
+	
+Usage:
+	highlight_doc("Sample doc", "Search query")
